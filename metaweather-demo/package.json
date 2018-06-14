@@ -1,13 +1,10 @@
 {
   "name": "metaweather-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Do not use for production. Test module for a conference.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "David Gonzalez && Alex Knol",
+  "license": "MIT",
   "dependencies": {
     "request": "^2.87.0",
     "request-promise": "^4.2.2"

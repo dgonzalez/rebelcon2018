@@ -1,8 +1,6 @@
-const request = require('request')
+const request = require('request-promise')
 
-module.exports = city => {
+module.exports = async city => {
   const url = `https://www.metaweather.com/api/location/search/?query=${city}`
-  return new Promise((resolve, reject) => {
-    resolve()
-  })
+  return await request(url)
 }
