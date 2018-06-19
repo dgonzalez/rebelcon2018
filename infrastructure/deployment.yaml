@@ -1,0 +1,25 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: my-server-deployment
+  labels:
+    app: my-server
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-server
+  template:
+    metadata:
+      labels:
+        app: my-server
+    spec:
+      containers:
+      - name: my-server
+        image: elexy/my-server:5
+        ports:
+        - containerPort: 3001
+        readinessProbe:
+          httpGet:
+            path: /hc
+            port: 3001
