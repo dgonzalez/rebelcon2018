@@ -6,10 +6,11 @@
   "author": "David Gonzalez && Alex Knol",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "express": "^4.16.3",
-    "metaweather-demo": "2.0.0"
+    "metaweather-demo": "1.0.0"
   }
 }
