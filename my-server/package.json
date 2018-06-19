@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "metaweather-demo": "2.0.0"
+    "metaweather-demo": "1.0.0"
   }
 }
