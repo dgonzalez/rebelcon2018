@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "metaweather-demo/package.json",
+        "my-server/package.json"
+      ]
+    }
+  }
+}
