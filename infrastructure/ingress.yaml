@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    #nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+    - hosts:
+      - rebelcon2018.seretalabs.com
+      secretName: tls-secret
+  rules:
+    - host: rebelcon2018.seretalabs.com
+      http:
+        paths:
+          - path: /api/location/
+            backend:
+              serviceName: api-svc
+              servicePort: 80
