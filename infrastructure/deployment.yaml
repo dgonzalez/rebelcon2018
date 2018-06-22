@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-server
-        image: elexy/my-server:7
+        image: elexy/my-server:12
         ports:
         - containerPort: 3001
         readinessProbe:
